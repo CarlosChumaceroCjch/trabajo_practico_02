@@ -4,9 +4,35 @@ public class Producto {
 	private String cod;
 	private String desc;
 	private double precioU;
-	
+	private OrigenFabricacion origenFabricacion;
+	private Categoria categoria;
 	public Producto() {
 		
+	}
+	
+	public Producto(String cod, String desc, double precioU, OrigenFabricacion origenFabricacion, Categoria categoria) {
+		super();
+		this.cod = cod;
+		this.desc = desc;
+		this.precioU = precioU;
+		this.origenFabricacion = origenFabricacion;
+		this.categoria = categoria;
+	}
+
+	public OrigenFabricacion getOrigenFabricacion() {
+		return origenFabricacion;
+	}
+
+	public void setOrigenFabricacion(OrigenFabricacion origenFabricacion) {
+		this.origenFabricacion = origenFabricacion;
+	}
+
+	public Categoria getCategoria() {
+		return categoria;
+	}
+
+	public void setCategoria(Categoria categoria) {
+		this.categoria = categoria;
 	}
 
 	public String getCod() {
@@ -34,6 +60,15 @@ public class Producto {
 	}
 	
 	
+
+
+	public enum OrigenFabricacion {
+		ARGENTINA,CHINA,BRASIL,URUGUAY
+	}
+	
+	public enum Categoria {
+		TELEFONIA, INFORMATICA,ELECTROHOGAR,HERRAMIENTAS
+	}
 	
 	
 }
