@@ -8,6 +8,7 @@ import ar.edu.unju.fi.ejercicio01.model.Producto;
 import ar.edu.unju.fi.ejercicio01.model.Producto.Categoria;
 import ar.edu.unju.fi.ejercicio01.model.Producto.OrigenFabricacion;
 
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -28,6 +29,8 @@ public class Main {
 						case 1:
 							CrearProd(sc, lista);
 							break;
+						case 2:
+							Mostrarprods (lista);
 						}
 					}while(op!=4);
 					
@@ -122,8 +125,17 @@ public class Main {
 		Producto producto =new Producto(cod, desc, precU, origen, categ);
 		lista.add(producto);
 		System.out.println("Producto cargado correctamente");
-		
 	}
+
+
+	public static void Mostrarprods (List<Producto>lista) {
+		
+		for (Producto productos :lista) {
+			
+		}
+	}
+	
+	
 }
 
 
