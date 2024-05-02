@@ -72,7 +72,6 @@ public class Producto {
 	
 	
 	@Override
-	
 	public String toString() {
 		return "\nCodigo del producto: "+cod+"\nDescripcion: "+desc+"\nPrecio unitario: "+precioU+"\nOrigen: "+ origenFabricacion+"\nCateogria: "+categoria;
 	}
